@@ -1,5 +1,5 @@
 const express = require('express');
-const ledger = require('../data/complicated_ledger.json');
+const ledger = require('./complicated_ledger.json');
 const { sanitizeLedger } = require('./ledger');
 
 const app = express()
