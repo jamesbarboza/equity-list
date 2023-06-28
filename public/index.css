@@ -1,0 +1,25 @@
+html {
+  font-family: "helvetica neue", helvetica, arial, freesans, "liberation sans", "numbus sans l", sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 1em 0;
+  text-align: center;
+}
+
+h1 > .small {
+  font-size: 0.5em;
+  font-weight: 300;
+  color: #999;
+}
+
+.content {
+  width: 800px;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+}

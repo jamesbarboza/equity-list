@@ -1,0 +1,29 @@
+html
+  head
+    title Investor Ledger
+    style
+      include ../public/index.css
+  body
+    - var balanceString = `Your investing account ($${balance} available)`
+    h1= balanceString
+      div(class='small')
+        - var dateRange = `${startDate} - ${endDate}`
+        = dateRange
+
+    div(class='content')
+      table
+        thead
+          th Date
+          th Type
+          th Description
+          th Amount
+          th Balance
+
+        tbody
+          each val in transactions
+            tr
+              th= val.date
+              th= val.type
+              th= val.description
+              th= val.amount
+              th= val.balance
